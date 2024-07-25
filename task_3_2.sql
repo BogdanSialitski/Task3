@@ -1,3 +1,4 @@
+--Вывести 10 актеров, чьи фильмы большего всего арендовали, отсортировать по убыванию.
 SELECT a.first_name, a.last_name, COUNT(r.rental_id) AS rental_count
 FROM actor a
 JOIN film_actor fa ON a.actor_id = fa.actor_id

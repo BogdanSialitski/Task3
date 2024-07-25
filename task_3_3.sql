@@ -1,3 +1,4 @@
+--Вывести категорию фильмов, на которую потратили больше всего денег.
 SELECT c.name AS category_name, SUM(p.amount) AS total_amount
 FROM payment p
 JOIN rental r ON p.rental_id = r.rental_id
